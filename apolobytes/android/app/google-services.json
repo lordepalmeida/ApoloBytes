@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "382373274727",
+    "project_id": "apolobytes",
+    "storage_bucket": "apolobytes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382373274727:android:e9d724ef6bce52226d60c2",
+        "android_client_info": {
+          "package_name": "com.lordep.apolobytes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382373274727-r3eiuc4d91vc2mji405v6ms68cvq87o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCez58oLBneV0eCosdSU1Qy-g3E5VNpIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382373274727-r3eiuc4d91vc2mji405v6ms68cvq87o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,3 @@
 # ApoloBytes
-Projeto de Desenvolvimento de Software
+Projeto e Desenvolvimento Informático
 

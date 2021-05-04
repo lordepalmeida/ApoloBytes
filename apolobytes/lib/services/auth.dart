@@ -1,5 +1,6 @@
 import 'package:apolobytes/models/myUser.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 
 class AuthService {
 
@@ -29,7 +30,8 @@ class AuthService {
   }
 
   // sign in with phone number
-
+ 
+ 
   // sign out
   Future signOut() async {
     try {

@@ -14,6 +14,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
 
   final AuthService _auth = AuthService();
+  final _formKey = GlobalKey<FormState>();
 
   // text field state
   String phone = '';
@@ -40,10 +41,12 @@ class _RegisterState extends State<Register> {
       body: Container(
           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
           child: Form(
+            key: _formKey,
             child: Column(
               children: <Widget>[
                 SizedBox(height: 20.0),
                 TextFormField(
+                  validator: (val) => val.isEmpty ? 'Introduza um contacto telefónico' : val.length <9 ? 'Um contacto telefónico válido deverá conter 9 dígitos' : null,
                   keyboardType: TextInputType.number,
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                   onChanged: (val) {
@@ -52,6 +55,7 @@ class _RegisterState extends State<Register> {
                 ),
                 SizedBox(height: 20.0),
                 TextFormField(
+                  validator: (val) => val.length < 8 ? 'A senha de acesso deverá conter no mínimo 8 caracteres': null,
                   obscureText: true,
                   onChanged: (val) {
                     setState(() => password = val);
@@ -65,9 +69,11 @@ class _RegisterState extends State<Register> {
                     style: TextStyle(color: Colors.white),
                   ),
                   onPressed: () async {
-                    
+                    if (_formKey.currentState.validate()){
+                      
+                    }
                   },
-                )
+                ),
               ],
             ),
           )

@@ -1,5 +1,5 @@
 import 'package:apolobytes/models/myUser.dart';
-import 'package:apolobytes/screens/auth/authenticate.dart';
+import 'package:apolobytes/screens/auth/logIn.dart';
 import 'package:apolobytes/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -12,7 +12,7 @@ class Wrapper extends StatelessWidget {
 
     //return either Home or Auth
     if (user == null) {
-      return Authenticate();
+      return Login();
     } else {
       return Home();
     }

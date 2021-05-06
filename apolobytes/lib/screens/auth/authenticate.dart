@@ -1,6 +1,6 @@
+import 'package:apolobytes/screens/auth/logIn.dart';
 import 'package:apolobytes/screens/auth/signIn.dart';
 import 'package:flutter/material.dart';
-import 'package:apolobytes/screens/auth/register.dart';
 
 class Authenticate extends StatefulWidget {
   @override
@@ -19,7 +19,7 @@ class _AuthState extends State<Authenticate> {
     if (showSignIn) {
       return SignIn(toggleView: toggleView);
     } else {
-      return Register(toggleView: toggleView);
+      return Login(toggleView: toggleView);
     }
   }
 }

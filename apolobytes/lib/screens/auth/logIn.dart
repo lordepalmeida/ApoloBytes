@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:apolobytes/screens/home/home.dart';
 import 'package:international_phone_input/international_phone_input.dart';
+import 'package:apolobytes/services/database.dart';
 
 enum MobileVerificationState {
   SHOW_MOBILE_FORM_STATE,
@@ -46,6 +47,11 @@ class _LoginState extends State<Login> {
     try {
       final authCredential =
           await _auth.signInWithCredential(phoneAuthCredential);
+
+      if(authCredential.credential != null){
+        await DatabaseService(uid: authCredential.user.uid).updateUserData('new byter member');
+      }
+
 
       setState(() {
         showLoading = false;
@@ -159,7 +165,7 @@ class _LoginState extends State<Login> {
       appBar: AppBar(
         backgroundColor: Colors.orange[400],
         elevation: 0.0,
-        title: Text('Apolo bytes'),
+        title: Text('Apolo Bytes'),
       ),
       body: Container(
          child: showLoading

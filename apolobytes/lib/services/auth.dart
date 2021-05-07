@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:apolobytes/models/myUser.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-/*import 'package:flutter/cupertino.dart';*/
+import 'package:apolobytes/services/database.dart';
+
 
 
 class AuthService {
@@ -32,7 +32,6 @@ class AuthService {
   }
 
   // register with phone number
-  
 
 
   // register with email & password
@@ -40,6 +39,7 @@ class AuthService {
     try {
       UserCredential credential = await _firebaseAuth.createUserWithEmailAndPassword(email: email, password: password);
       User user = credential.user;
+      await DatabaseService(uid: user.uid).updateUserData('new byter member');
       return _userFromFirebaseUser(user);
     } catch(e) {
       print(e.toString());

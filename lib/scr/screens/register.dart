@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:apolobytes/scr/widgets/screen_navigation.dart';
-import 'package:apolobytes/scr/providers/auth.dart';
 import 'package:apolobytes/scr/screens/login.dart';
 import 'package:apolobytes/scr/widgets/custom_text.dart';
-import 'package:apolobytes/scr/widgets/loading.dart';
-import 'package:provider/provider.dart';
-
-import 'home.dart';
 
 class RegistrationScreen extends StatefulWidget {
   @override

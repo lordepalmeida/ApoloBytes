@@ -1,0 +1,1 @@
+<input type="text" class="w-100" id="query" name="query" value="{{ request()->input('query') }}" onkeyup="myFunction()" placeholder=" Procurar Refeições, Ingredientes, Bebidas ou Complementos">

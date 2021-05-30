@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
     };
 
     await http
-        .post(Uri.parse("https://apolo-bytes.000webhostapp.com/signIn.php"),body:data)
+        .post(Uri.parse("https://apolo-bytes.000webhostapp.com/api/signIn.php"),body:data)
         .then((http.Response response) {print(response.body);
 
       if(json.decode(response.body) == "sem conta"){

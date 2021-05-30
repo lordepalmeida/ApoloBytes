@@ -32,7 +32,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     };
 
     await http
-      .post(Uri.parse("https://apolo-bytes.000webhostapp.com/signUp.php"),body:data)
+      .post(Uri.parse("https://apolo-bytes.000webhostapp.com/api/signUp.php"),body:data)
       .then((http.Response response) { 
 
       if(json.decode(response.body) == "conta existe"){

@@ -30,6 +30,7 @@ class _EmentaState extends State<Ementa> {
           child: FutureBuilder(
             future: produtos,
             builder: (context, snapshot) {
+              if (snapshot.hasData) {
               return ListView.builder(
                 itemCount: snapshot.data.length,
                 shrinkWrap: true,
@@ -85,9 +86,12 @@ class _EmentaState extends State<Ementa> {
                         ),
                       ),
                     );
-                  }
+                  } 
                 );
-              }),
+              }
+                return CircularProgressIndicator();
+              },
+            ),
         ),
     ),
     );

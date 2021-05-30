@@ -12,7 +12,7 @@ import 'package:http/http.dart' as http;
   Future<List<Restaurante>> fetchRestaurantes() async {
     List<Restaurante> _restaurantes = [];
     await http
-        .get(Uri.parse("http://192.168.137.1/apolobytes/api/getRestaurantes.php"))
+        .get(Uri.parse("https://apolo-bytes.000webhostapp.com/getRestaurantes.php"))
         .then((http.Response response){
           //print(response.body);
           final List fetchedData = json.decode(response.body);
@@ -50,7 +50,7 @@ import 'package:http/http.dart' as http;
 Future<List<Product>> fetchProducts(int ementa) async {
     List<Product> _produtos = [];
     await http
-        .get(Uri.parse("http://192.168.137.1/apolobytes/api/getProdutos.php?ementa=${ementa}"))
+        .get(Uri.parse("https://apolo-bytes.000webhostapp.com/getProdutos.php?ementa=${ementa}"))
         .then((http.Response response){
           //print(response.body);
           final List fetchedData = json.decode(response.body);
@@ -68,6 +68,7 @@ Future<List<Product>> fetchProducts(int ementa) async {
         });
         return _produtos;  
   }
+
 
 
 

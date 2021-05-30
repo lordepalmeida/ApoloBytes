@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
               decoration: BoxDecoration(
                 color: Colors.orange[800]
               ),
-              currentAccountPicture: Image(image: AssetImage("images/pint.png")),
+              currentAccountPicture: Image(image: AssetImage("images/avatar.png")),
               accountName: CustomText(text: "Olá, username!", color: Colors.white, weight: FontWeight.bold, size: 18,), accountEmail:CustomText(text: "Apolo Bytes", color: Colors.white,), ),
           ListTile(
             onTap: (){},
@@ -419,6 +419,7 @@ class _HomeState extends State<Home> {
               child: FutureBuilder(
                 future: restaurantes,
                 builder: (context, snapshot) {
+                  if (snapshot.hasData) {
                   return ListView.builder(
                       itemCount: snapshot.data.length,
                       shrinkWrap: true,
@@ -531,6 +532,8 @@ class _HomeState extends State<Home> {
                       
                     },
                   );
+                }
+                return CircularProgressIndicator();
                 },                  
               ),
             ),

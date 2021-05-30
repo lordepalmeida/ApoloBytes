@@ -1,7 +1,12 @@
+import 'package:apolobytes/scr/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:apolobytes/scr/widgets/screen_navigation.dart';
 import 'package:apolobytes/scr/screens/register.dart';
 import 'package:apolobytes/scr/widgets/custom_text.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'dart:async';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -9,6 +14,50 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+
+  TextEditingController emailctrl,passctrl;
+
+  @override
+  void initState() {
+    super.initState();
+    emailctrl = new TextEditingController();
+    passctrl = new TextEditingController();
+  }
+
+  Future signIn() async{
+    var data = {
+      "email":emailctrl.text,
+      "pass":passctrl.text,
+    };
+
+    await http
+        .post(Uri.parse("https://apolo-bytes.000webhostapp.com/signIn.php"),body:data)
+        .then((http.Response response) {print(response.body);
+
+      if(json.decode(response.body) == "sem conta"){
+        Fluttertoast.showToast(
+          msg: 'Nenhuma conta associada ao email',
+          fontSize: 25, 
+          textColor: Colors.red,
+          toastLength: Toast.LENGTH_SHORT,
+        );
+      }
+      else{
+        if(json.decode(response.body) == "false"){
+        Fluttertoast.showToast(
+          msg: 'Password inválida',
+          fontSize: 25, 
+          textColor: Colors.red,
+          toastLength: Toast.LENGTH_SHORT,
+        );
+        } else{
+          changeScreen(context, Home());
+        }
+      }
+    });
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                ),
                child: Padding(padding: EdgeInsets.only(left: 10),
                child: TextFormField(
+                 controller: emailctrl,
                  decoration: InputDecoration(
                      border: InputBorder.none,
                      hintText: "Email",
@@ -54,6 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: Padding(padding: EdgeInsets.only(left: 10),
                   child: TextFormField(
+                    controller: passctrl,
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Password",
@@ -75,7 +126,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      CustomText(text: "Entrar", color: Colors.white, size: 22,)
+                      MaterialButton(
+                        onPressed: () => signIn(),
+                        child: CustomText(text: "Entrar", color: Colors.white, size: 22,)
+                        )
                     ],
                   ),),
               ),

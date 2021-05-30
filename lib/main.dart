@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primaryColor: Colors.orange[800],
         ),
-        home: Home(/*restaurantesModel: restaurantesModel*/),
+        home: LoginScreen(),
       );
     //);
   }

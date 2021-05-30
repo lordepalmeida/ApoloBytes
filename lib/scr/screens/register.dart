@@ -1,7 +1,12 @@
+import 'package:apolobytes/scr/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:apolobytes/scr/widgets/screen_navigation.dart';
 import 'package:apolobytes/scr/screens/login.dart';
 import 'package:apolobytes/scr/widgets/custom_text.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'dart:async';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class RegistrationScreen extends StatefulWidget {
   @override
@@ -9,6 +14,41 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
+
+  TextEditingController emailctrl,passctrl, namectrl;
+
+  @override
+  void initState() {
+    super.initState();
+    emailctrl = new TextEditingController();
+    passctrl = new TextEditingController();
+  }
+    
+  Future register() async{
+    var data = {
+      "email":emailctrl.text,
+      "name":namectrl.text,
+      "pass":passctrl.text,
+    };
+
+    await http
+      .post(Uri.parse("https://apolo-bytes.000webhostapp.com/signUp.php"),body:data)
+      .then((http.Response response) { 
+
+      if(json.decode(response.body) == "conta existe"){
+        Fluttertoast.showToast(msg: "Já existe uma conta associada ao email",toastLength: Toast.LENGTH_SHORT);
+      }else{
+
+        if(json.decode(response.body) == "true"){
+          changeScreen(context, Home());
+        }else{
+          Fluttertoast.showToast(msg: "Erro",toastLength: Toast.LENGTH_SHORT);
+        }
+      }
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +76,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 ),
                 child: Padding(padding: EdgeInsets.only(left: 10),
                   child: TextFormField(
+                    controller: namectrl,
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Username",

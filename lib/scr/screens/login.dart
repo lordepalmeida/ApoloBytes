@@ -31,8 +31,8 @@ class _LoginScreenState extends State<LoginScreen> {
     };
 
     await http
-        .post(Uri.parse("https://apolo-bytes.000webhostapp.com/api/signIn.php"),body:data)
-        .then((http.Response response) {print(response.body);
+        .post(Uri.parse("https://apolo-bytes.000webhostapp.com/api/signIn.php"),body: json.encode(data))
+        .then((http.Response response) {print(response.body); print(json.encode(data));
 
       if(json.decode(response.body) == "sem conta"){
         Fluttertoast.showToast(

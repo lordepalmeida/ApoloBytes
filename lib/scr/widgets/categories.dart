@@ -20,11 +20,6 @@ List<Category> categoriesList = [
    Category(name: "Grilled/Fried Pork", image: "ice-cream.png"),
    Category(name: "Sea food", image: "fish.png"),
    Category(name: "Drinks", image: "pint.png")
-
-
-
-
-
 ];
 
 class Categories extends StatelessWidget {

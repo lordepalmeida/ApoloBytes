@@ -52,7 +52,7 @@ class _EmentaState extends State<Ementa> {
                           child: Row(
                             children: <Widget>[
                               Padding(
-                                padding: EdgeInsets.only(left: 35),
+                                padding: EdgeInsets.only(left: 15),
                                 child: Column(
                                   children: <Widget>[
 
@@ -76,8 +76,8 @@ class _EmentaState extends State<Ementa> {
                                 children: <Widget>[
                                   Image.asset(
                                     "images/${produto.imagePath}",
-                                    width: 180,
-                                    height: 110,
+                                    width: 150,
+                                    
                                   ),
                                 ],
                               ),

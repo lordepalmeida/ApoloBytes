@@ -377,7 +377,7 @@ class _HomeState extends State<Home> {
                   CustomText(
                     text: "Promoções",
                     size: 20,
-                    color: Colors.grey,
+                    color: Colors.grey[800],
                   ),
                   Spacer(),
                   CustomText(
@@ -401,7 +401,7 @@ class _HomeState extends State<Home> {
                   CustomText(
                     text: "Mais Populares",
                     size: 20,
-                    color: Colors.grey,
+                    color: Colors.grey[800],
                   ),
                   Spacer(),
                   CustomText(
@@ -437,7 +437,7 @@ class _HomeState extends State<Home> {
                     padding: const EdgeInsets.all(0),
                     child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset("images/food.jpg")),
+                        child: Image.asset("images/${restaurante.imagePath}")),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),

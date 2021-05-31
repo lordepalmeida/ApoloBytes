@@ -6,20 +6,12 @@ List<Category> categoriesList = [
 
    Category(name: "Shawarmas", image: "salad.png"),
    Category(name: "Pizza", image: "salad.png"),
-   Category(name: "Sandwiches", image: "salad.png"),
+   Category(name: "Sandes", image: "salad.png"),
    Category(name: "Wafles", image: "salad.png"),
-   Category(name: "Burgers", image: "salad.png"),
    Category(name: "Kebabs", image: "salad.png"),
-   Category(name: "Spicy Crispy Fried Chicken Wings", image: "salad.png"),
-   Category(name: "Ribs Meals", image: "salad.png"),
-   Category(name: "Fried Rice Dishes", image: "salad.png"),
-   Category(name: "Salad", image: "salad.png"),
-   Category(name: "Jollof Rice Dishes", image: "steak.png"),
-   Category(name: "Plain Rice Dishes", image: "sandwich.png"),
-   Category(name: "Zeallers Spaghetti", image: "ice-cream.png"),
-   Category(name: "Grilled/Fried Pork", image: "ice-cream.png"),
-   Category(name: "Sea food", image: "fish.png"),
-   Category(name: "Drinks", image: "pint.png")
+   Category(name: "Saladas", image: "salad.png"),
+   Category(name: "Peixe", image: "fish.png"),
+   Category(name: "Bebidas", image: "pint.png"),
 ];
 
 class Categories extends StatelessWidget {

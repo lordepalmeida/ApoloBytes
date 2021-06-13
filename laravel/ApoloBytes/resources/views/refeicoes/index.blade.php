@@ -170,7 +170,7 @@
                     <td><img src="{{ Storage::url($refeicao->imagem) }}" height="75" width="75" alt="" /></td>
                     <td>{{ $refeicao->nome }}</td>
                     <td>{{ $refeicao->preco }} €</td>
-                    <td>{{ $refeicao->tempoConfecao }}</td>
+                    <td>{{ $refeicao->tempoConfecao }} min</td>
                     <td>{{ $refeicao->descricao }}</td>
                     <td>
                         <form action="{{ route('refeicoes.destroy',$refeicao->id) }}" method="POST">

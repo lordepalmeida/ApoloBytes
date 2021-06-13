@@ -133,12 +133,6 @@
             text-align-last: right;
             color: #FA5B0C;
         }
-
-        .edit-btn {
-            background-color: #FA5B0C;
-            width: 30%;
-            align-items: center;
-        }
     </style>
 
 <body>
@@ -192,7 +186,7 @@
                     <div class="col-lg-6 col-md-3 col-sm-12 resposta">{{ $restaurante->contacto }}</div>
                 </div>
                 <div class="row py-5" style="place-content: center;">
-                    <a class="btn edit-btn text-white" href="{{ route('restaurantes.edit',$restaurante->id) }}">Editar</a>
+                    <a class="btn text-white" style="background-color: #FA5B0C; width: 30%; align-items: center;" href="{{ route('restaurantes.edit',$restaurante->id) }}">Editar</a>
                 </div>
             </div>
 

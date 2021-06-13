@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\values-az\\values-az.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "466",
+                        "endColumns": "100",
+                        "endOffsets": "562"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\805e170f6fd7b268a636a660e8ad7a51\\browser-1.3.0\\res\\values-az\\values-az.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,151,255,363",
+                        "endColumns": "95,103,107,102",
+                        "endOffsets": "146,250,358,461"
+                    }
+                }
+            ]
+        }
+    ]
+}

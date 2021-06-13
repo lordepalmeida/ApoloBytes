@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">382373274727-r3eiuc4d91vc2mji405v6ms68cvq87o6.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">382373274727</string>
+    <string name="google_api_key" translatable="false">AIzaSyDCez58oLBneV0eCosdSU1Qy-g3E5VNpIg</string>
+    <string name="google_app_id" translatable="false">1:382373274727:android:e9d724ef6bce52226d60c2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDCez58oLBneV0eCosdSU1Qy-g3E5VNpIg</string>
+    <string name="google_storage_bucket" translatable="false">apolobytes.appspot.com</string>
+    <string name="project_id" translatable="false">apolobytes</string>
+</resources>

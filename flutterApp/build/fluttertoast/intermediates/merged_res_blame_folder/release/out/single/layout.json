@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\toast_custom.xml",
+        "source": "C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-8.0.7\\android\\src\\main\\res\\layout\\toast_custom.xml"
+    },
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "H:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\pedro\\.gradle\\caches\\transforms-2\\files-2.1\\37c9812e6f3e3678d1d9ceef3b4c9f33\\core-1.1.0\\res\\layout\\notification_action.xml"
+    }
+]

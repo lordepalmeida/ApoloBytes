@@ -1,0 +1,4 @@
+#Sun Jun 13 16:17:56 BST 2021
+base.0=H\:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,10 @@
+#Sun Jun 13 16:19:11 BST 2021
+path.2=classes_0.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=H\:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
+base.1=H\:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=H\:\\Projects\\GitHub\\ApoloBytes\\flutterApp\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

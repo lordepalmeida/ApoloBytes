@@ -18,6 +18,8 @@
 --
 -- Table structure for table `bebida`
 --
+create database if not exists apolobytes;
+use apolobytes;
 
 DROP TABLE IF EXISTS `bebida`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
